@@ -1,15 +1,32 @@
 {
-    "name": "Auto Approove Bot",
-    "description": "Auto approove telegram group/channel join requests bot.",
-    "repository": "https://github.com/VJBots/VJ-Auto-Approval-Bot",
-    "logo":"https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg",
-    "keywords": [
-        "Bot",
-        "Telegram ",
-        "Pyrogram "
+{
+
+    "name": "aacpet",
+
+    "description": "Download videos from various websites using this telegram bot",
+
+    "repository": "",
+    "buildpacks":[
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        }
     ],
-    
-    "env": {
+    "keywords": [
+
+       
+
+        "telegram bot",
+
+        "pyrogram"
+
+    ],
+   "env": {
     "API_ID": {
       "description": "Enter your API_ID, get it from my.telegram.org/apps",
       "required": true
@@ -37,15 +54,17 @@
         
   },
   
-    "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-    "buildpacks": [
+"buildpacks": [
+
         {
+
             "url": "heroku/python"
-        }
+
+        },
+       {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+       }
+       
     ]
+
 }
